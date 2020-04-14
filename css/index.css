@@ -1,1 +1,210 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+  font-family: Helvetica, sans-serif;
+}
+body {
+  padding: 5rem 17.7rem 0 17.7rem;
+  font-size: 1.8rem;
+}
+header {
+  margin: 3.3rem 0;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+nav a {
+  padding: 0 32px;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #000;
+}
+.hero {
+  background-color: #E9ECEF;
+  padding: 6.4rem 3.2rem 8rem 3.2rem;
+  margin-bottom: 3.7rem;
+  border-radius: 5px;
+}
+.hero img {
+  margin-bottom: 1.4rem;
+}
+.hero h1 {
+  font-size: 4rem;
+}
+.hero h3 {
+  margin: 2.7rem 0 3.2rem 0;
+}
+.hero hr {
+  color: #D1D4D7;
+}
+.hero p {
+  margin: 3rem 0;
+}
+.hero button {
+  width: 15.5rem;
+  height: 4.6rem;
+  font-size: 1.8rem;
+  background-color: #808080;
+  color: #fff;
+  border-radius: 5px;
+}
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  margin: 2.1rem 0;
+}
+.about-me h2 {
+  font-size: 3.6rem;
+  margin-bottom: 2.4rem;
+}
+.about-me h4 {
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+.about-me p {
+  line-height: 1.5;
+}
+.about-me li {
+  border: 1px solid #DFDFDF;
+  padding: 1.8rem 2.1rem;
+}
+.about-me div {
+  width: 50%;
+}
+.about-me:first-child {
+  margin-right: 4rem;
+}
