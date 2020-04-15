@@ -161,6 +161,7 @@ nav a {
 }
 .hero img {
   margin-bottom: 1.4rem;
+  height: 30rem;
 }
 .hero h1 {
   font-size: 4rem;
@@ -196,6 +197,7 @@ nav a {
   margin-bottom: 1.2rem;
 }
 .about-me p {
+  margin: 1rem;
   line-height: 1.5;
 }
 .about-me li {
