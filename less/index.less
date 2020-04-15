@@ -62,10 +62,11 @@ html, body {
 body {
 	padding: 5rem 17.7rem 0 17.7rem;
 	font-size: 1.8rem;
+
 }
 
 header {
-	margin: 3.3rem 0;
+	margin: 0 0 3.3rem 0;
 }
 
 nav {
@@ -143,8 +144,52 @@ nav {
 	div {
 		width: 50%;
 	}
+
+	div:first-child {
+		margin-right: 4rem;
+	}
 }
 
-.about-me:first-child {
-	margin-right: 4rem;
+.work-history {
+	margin: 5rem 0;
+
+	h4 {
+		font-size: 2.4rem;
+		margin-bottom: 1.2rem;
+	}
+
+	table {
+		width: 100%;
+		text-align: left;
+
+		thead {
+			font-weight: bold;
+
+			th {
+				padding: 2.8rem 1.2rem;
+			}
+		}
+
+		tbody {
+			tr:nth-child(odd) {
+				background-color: #f2f2f2;
+			}
+
+			td {
+				padding: 2.8rem 1.2rem;
+			}
+		}
+	}
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #808080;
+
+	small {
+		padding: 2.8rem 0;
+		color: #fff
+	}
 }

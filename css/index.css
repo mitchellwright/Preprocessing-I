@@ -141,7 +141,7 @@ body {
   font-size: 1.8rem;
 }
 header {
-  margin: 3.3rem 0;
+  margin: 0 0 3.3rem 0;
 }
 nav {
   display: flex;
@@ -205,6 +205,39 @@ nav a {
 .about-me div {
   width: 50%;
 }
-.about-me:first-child {
+.about-me div:first-child {
   margin-right: 4rem;
+}
+.work-history {
+  margin: 5rem 0;
+}
+.work-history h4 {
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+.work-history table {
+  width: 100%;
+  text-align: left;
+}
+.work-history table thead {
+  font-weight: bold;
+}
+.work-history table thead th {
+  padding: 2.8rem 1.2rem;
+}
+.work-history table tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+.work-history table tbody td {
+  padding: 2.8rem 1.2rem;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #808080;
+}
+footer small {
+  padding: 2.8rem 0;
+  color: #fff;
 }
