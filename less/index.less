@@ -1,4 +1,25 @@
-// Is this working?
+// Variables
+@font-family:	Helvetica, sans-serif;
+@hr-color:		#D1D4D7;
+@text-color:	#fff;
+
+
+// Mixins
+.flex-space-between() {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex-flex-end() {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.flex-center() {
+	display: flex;
+	justify-content: center;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -56,142 +77,161 @@ table {
 html, body {
 	height: 100%;
 	font-size: 62.5%;
-	font-family: Helvetica, sans-serif;
+	font-family: @font-family;
 }
 
 body {
 	padding: 5rem 17.7rem 0 17.7rem;
 	font-size: 1.8rem;
 
-}
-
-header {
-	margin: 0 0 3.3rem 0;
-}
-
-nav {
-	display: flex;
-	justify-content: flex-end;
-
-	a {
-		padding: 0 32px;
-		font-size: 2rem;
-		text-decoration: none;
-		color: #000;
-	}
-}
-
-.hero {
-	background-color: #E9ECEF;
-	padding: 6.4rem 3.2rem 8rem 3.2rem;
-	margin-bottom: 3.7rem;
-	border-radius: 5px;
-
-	img {
-		margin-bottom: 1.4rem;
-		height: 30rem;
+	@media (max-width: 500px) {
+		padding: 1rem 2rem;
 	}
 
-	h1 {
-		font-size: 4rem;
+	header {
+		margin: 0 0 3.3rem 0;
 	}
 
-	h3 {
-		margin: 2.7rem 0 3.2rem 0;
+	nav {
+		.flex-flex-end();
+
+		@media (max-width: 500px) {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		a {
+			padding: 0 32px;
+			font-size: 2rem;
+			text-decoration: none;
+			color: #000;
+		}
 	}
 
-	hr {
-		color: #D1D4D7;
-	}
-
-	p {
-		margin: 3rem 0;
-	}
-
-	button {
-		width: 15.5rem;
-		height: 4.6rem;
-		font-size: 1.8rem;
-		background-color: #808080;
-		color: #fff;
+	.hero {
+		background-color: #E9ECEF;
+		padding: 6.4rem 3.2rem 8rem 3.2rem;
+		margin-bottom: 3.7rem;
 		border-radius: 5px;
-	}
-}
 
-.about-me {
-	display: flex;
-	justify-content: space-between;
-	margin: 2.1rem 0;
-
-	h2 {
-		font-size: 3.6rem;
-		margin-bottom: 2.4rem;
-	}
-
-	h4 {
-		font-size: 2.4rem;
-		margin-bottom: 1.2rem;
-	}
-
-	p {
-		margin: 1rem;
-		line-height: 1.5;
-	}
-
-	li {
-		border: 1px solid #DFDFDF;
-		padding: 1.8rem 2.1rem;
-	}
-
-	div {
-		width: 50%;
-	}
-
-	div:first-child {
-		margin-right: 4rem;
-	}
-}
-
-.work-history {
-	margin: 5rem 0;
-
-	h4 {
-		font-size: 2.4rem;
-		margin-bottom: 1.2rem;
-	}
-
-	table {
-		width: 100%;
-		text-align: left;
-
-		thead {
-			font-weight: bold;
-
-			th {
-				padding: 2.8rem 1.2rem;
-			}
+		img {
+			margin-bottom: 1.4rem;
+			height: 30rem;
 		}
 
-		tbody {
-			tr:nth-child(odd) {
-				background-color: #f2f2f2;
-			}
+		h1 {
+			font-size: 4rem;
+		}
 
-			td {
-				padding: 2.8rem 1.2rem;
+		h3 {
+			margin: 2.7rem 0 3.2rem 0;
+		}
+
+		hr {
+			color: @hr-color;
+		}
+
+		p {
+			margin: 3rem 0;
+		}
+
+		button {
+			width: 15.5rem;
+			height: 4.6rem;
+			font-size: 1.8rem;
+			background-color: #808080;
+			color: @text-color;
+			border-radius: 5px;
+		}
+
+		@media (max-width: 500px) {
+			width: 100%;
+			padding: 1.2rem;
+			margin-right: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			img {
+				width: 75%;
+				height: 75%
 			}
 		}
 	}
-}
 
-footer {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #808080;
+	.about-me {
+		.flex-space-between();
+		margin: 2.1rem 0;
 
-	small {
-		padding: 2.8rem 0;
-		color: #fff
+		h2 {
+			font-size: 3.6rem;
+			margin-bottom: 2.4rem;
+		}
+
+		h4 {
+			font-size: 2.4rem;
+			margin-bottom: 1.2rem;
+		}
+
+		p {
+			margin: 1rem;
+			line-height: 1.5;
+		}
+
+		li {
+			border: 1px solid #DFDFDF;
+			padding: 1.8rem 2.1rem;
+		}
+
+		div {
+			width: 50%;
+		}
+
+		div:first-child {
+			margin-right: 4rem;
+		}
+	}
+
+	.work-history {
+		margin: 5rem 0;
+
+		h4 {
+			font-size: 2.4rem;
+			margin-bottom: 1.2rem;
+		}
+
+		table {
+			width: 100%;
+			text-align: left;
+
+			thead {
+				font-weight: bold;
+
+				th {
+					padding: 2.8rem 1.2rem;
+				}
+			}
+
+			tbody {
+				tr:nth-child(odd) {
+					background-color: #f2f2f2;
+				}
+
+				td {
+					padding: 2.8rem 1.2rem;
+				}
+			}
+		}
+	}
+
+	footer {
+		.flex-center();
+		align-items: center;
+		background-color: #808080;
+
+		small {
+			padding: 2.8rem 0;
+			color: @text-color;
+		}
 	}
 }

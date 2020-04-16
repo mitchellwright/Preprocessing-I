@@ -140,42 +140,53 @@ body {
   padding: 5rem 17.7rem 0 17.7rem;
   font-size: 1.8rem;
 }
-header {
+@media (max-width: 500px) {
+  body {
+    padding: 1rem 2rem;
+  }
+}
+body header {
   margin: 0 0 3.3rem 0;
 }
-nav {
+body nav {
   display: flex;
   justify-content: flex-end;
 }
-nav a {
+@media (max-width: 500px) {
+  body nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+body nav a {
   padding: 0 32px;
   font-size: 2rem;
   text-decoration: none;
   color: #000;
 }
-.hero {
+body .hero {
   background-color: #E9ECEF;
   padding: 6.4rem 3.2rem 8rem 3.2rem;
   margin-bottom: 3.7rem;
   border-radius: 5px;
 }
-.hero img {
+body .hero img {
   margin-bottom: 1.4rem;
   height: 30rem;
 }
-.hero h1 {
+body .hero h1 {
   font-size: 4rem;
 }
-.hero h3 {
+body .hero h3 {
   margin: 2.7rem 0 3.2rem 0;
 }
-.hero hr {
+body .hero hr {
   color: #D1D4D7;
 }
-.hero p {
+body .hero p {
   margin: 3rem 0;
 }
-.hero button {
+body .hero button {
   width: 15.5rem;
   height: 4.6rem;
   font-size: 1.8rem;
@@ -183,63 +194,77 @@ nav a {
   color: #fff;
   border-radius: 5px;
 }
-.about-me {
+@media (max-width: 500px) {
+  body .hero {
+    width: 100%;
+    padding: 1.2rem;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .hero img {
+    width: 75%;
+    height: 75%;
+  }
+}
+body .about-me {
   display: flex;
   justify-content: space-between;
   margin: 2.1rem 0;
 }
-.about-me h2 {
+body .about-me h2 {
   font-size: 3.6rem;
   margin-bottom: 2.4rem;
 }
-.about-me h4 {
+body .about-me h4 {
   font-size: 2.4rem;
   margin-bottom: 1.2rem;
 }
-.about-me p {
+body .about-me p {
   margin: 1rem;
   line-height: 1.5;
 }
-.about-me li {
+body .about-me li {
   border: 1px solid #DFDFDF;
   padding: 1.8rem 2.1rem;
 }
-.about-me div {
+body .about-me div {
   width: 50%;
 }
-.about-me div:first-child {
+body .about-me div:first-child {
   margin-right: 4rem;
 }
-.work-history {
+body .work-history {
   margin: 5rem 0;
 }
-.work-history h4 {
+body .work-history h4 {
   font-size: 2.4rem;
   margin-bottom: 1.2rem;
 }
-.work-history table {
+body .work-history table {
   width: 100%;
   text-align: left;
 }
-.work-history table thead {
+body .work-history table thead {
   font-weight: bold;
 }
-.work-history table thead th {
+body .work-history table thead th {
   padding: 2.8rem 1.2rem;
 }
-.work-history table tbody tr:nth-child(odd) {
+body .work-history table tbody tr:nth-child(odd) {
   background-color: #f2f2f2;
 }
-.work-history table tbody td {
+body .work-history table tbody td {
   padding: 2.8rem 1.2rem;
 }
-footer {
+body footer {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background-color: #808080;
 }
-footer small {
+body footer small {
   padding: 2.8rem 0;
   color: #fff;
 }
